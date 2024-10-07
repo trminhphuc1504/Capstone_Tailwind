@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="./lib/slick/slick.css" />
+
+    <!-- Slick CSS Theme -->
+    <!-- Ko bắt buộc -->
+    <link rel="stylesheet" href="./lib/slick/slick-theme.css" />
+    <!--Nhúng CSS tailwindcss sau khi watch  -->
+    <link rel="stylesheet" href="./output.css" />
+    <title>Azzle</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-[#efeae3] py-6">
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- Header-Logo -->
+        <a href="#">
+          <img src="./images/logo-dark.png" alt="" width="96" height="24" />
+        </a>
+        <!-- Header-nav -->
+        <nav class="space-x-8 flex items-center">
+          <a href="#">Demo</a>
+          <img
+            class="transform rotate-90 hover:transform hover:rotate-0"
+            src="./images/icon-black-cheveron-right.svg"
+            alt=""
+            width="16"
+            height="1"
+          />
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <img
+            class="transform rotate-90 hover:transform hover:rotate-0"
+            src="./images/icon-black-cheveron-right.svg"
+            alt=""
+            width="16"
+            height="1"
+          />
+          <a href="#">Pages</a>
+          <img
+            class="transform rotate-90 hover:transform hover:rotate-0"
+            src="./images/icon-black-cheveron-right.svg"
+            alt=""
+            width="16"
+            height="1"
+          />
+          <a href="#">Contact</a>
+        </nav>
+        <div class="space-x-6">
+          <button
+            class="border border-black px-6 py-2 rounded-[50px] text-black font-bold [transition:all_0.3s_ease-out] bg-[linear-gradient(to_top,_#EFEAE3_50%,_#FE330A_50%)] [background-size:100%_200%] bg-bottom hover:bg-top hover:border-[#FE330A] cursor-pointer"
+          >
+            <span>Login</span>
+          </button>
+          <button
+            class="border border-black px-6 py-2 rounded-[50px] text-white font-bold [transition:all_0.3s_ease-out] bg-[linear-gradient(to_top,_black_50%,_#FE330A_50%)] [background-size:100%_200%] bg-bottom hover:bg-top hover:border-[#FE330A] cursor-pointer"
+          >
+            <span> Sign up free </span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <section
+      id="section-hero"
+      class="flex flex-col items-center text-center py-16 rounded-bl-[30px] rounded-br-[30px]"
+    >
+      <div class="global-container">
+        <h1 class="text-8xl font-bold mb-6">
+          Simplify your SaaS solution with AI
+        </h1>
+        <p class="text-lg font-semibold mb-11">
+          Our AI SAAS tool is a cloud-based software delivery model. It helps
+          businesses forecast demand for products and services and optimize
+          inventory management and supply chain operations.
+        </p>
+        <div class="mb-20">
+          <button
+            class="border border-black px-6 py-4 rounded-[50px] text-white font-bold [transition:all_0.3s_ease-out] bg-[linear-gradient(to_top,_black_50%,_#FE330A_50%)] [background-size:100%_200%] bg-bottom hover:bg-top hover:border-[#FE330A] cursor-pointer"
+          >
+            Get started for free
+          </button>
+          <button
+            class="border border-black px-6 py-4 rounded-[50px] text-black font-bold [transition:all_0.3s_ease-out] bg-[linear-gradient(to_top,_#EFEAE3_50%,_#FE330A_50%)] [background-size:100%_200%] bg-bottom hover:bg-top hover:border-[#FE330A] cursor-pointer"
+          >
+            <span> Learn more </span>
+          </button>
+        </div>
+        <div
+          class="bg-[radial-gradient(50%_50%_at_50%_50%,_#ff9831_0%,_#fe330a_100%)] filter blur-[55px] absolute -right-[150px] top-[370px] z-[1] h-[500px] w-[500px] animate-spin rounded-[500px]"
+        ></div>
+        <div
+          class="bg-[radial-gradient(50%_50%_at_50%_50%,_#ff9831_0%,_#fe330a_100%)] filter blur-[55px] absolute right-[57px] top-[620px] z-[1] h-[450px] w-[450px] animate-spin rounded-[450px]"
+        ></div>
+
+        <div>
+          <img
+            src="./images/hero-dashboard.jpg"
+            width="1296"
+            height="640"
+            alt=""
+            class="h-auto w-full"
+          />
+        </div>
+        <div class="border-t-2 my-16 mx-[110px] border-[#E4E0D8]"></div>
+        <p class="text-lg mb-10">
+          Companies of all sizes trust us to find AI SaaS critical to their
+          growth and innovation
+        </p>
+        <div class="slick-slider">
+          <div><img src="./images/brand-1.png" alt="" /></div>
+          <div><img src="./images/brand-2.png" alt="" /></div>
+          <div><img src="./images/brand-3.png" alt="" /></div>
+          <div><img src="./images/brand-4.png" alt="" /></div>
+          <div><img src="./images/brand-5.png" alt="" /></div>
+          <div><img src="./images/brand-1.png" alt="" /></div>
+          <div><img src="./images/brand-3.png" alt="" /></div>
+        </div>
+      </div>
+    </section>
+    <section id="section-service">
+      <div class="pb-20 pt-20">
+        <div class="global-container">
+          <div class="mb-10 jobs">
+            <div class="max-w-[746px] font-bold text-7xl">
+              <h2>Core features that make it valuable</h2>
+            </div>
+          </div>
+          <ul
+            class="grid grid-cols-4 gap-[2px] overflow-hidden rounded-[10px] border-2 border-black bg-black"
+          >
+            <li
+              class="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-black"
+            >
+              <div class="relative mb-9 h-[70px] w-[70px]">
+                <img
+                  src="./images/service-icon-black-1.svg"
+                  alt=""
+                  width="70"
+                  height="70"
+                />
+                <img
+                  src="./images/service-icon-orange-1.svg"
+                  alt=""
+                  width="70"
+                  height="70"
+                  class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100"
+                />
+              </div>
+              <h3
+                class="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white text-[28px]"
+              >
+                <a class="hover:text-[#FE330A]" href="">Resource Flexibility</a>
+              </h3>
+              <p class="mb-12 duration-300 group-hover:text-white">
+                This is an excellent option for people & small businesses who
+                are starting out.
+              </p>
+              <a
+                class="relative inline-block h-[30px] w-[30px] duration-300"
+                href=""
+              >
+                <img
+                  src="./images/arrow-right-black.svg"
+                  alt=""
+                  width="30"
+                  height="30"
+                />
+                <img
+                  src="./images/arrow-right-orange.svg"
+                  alt=""
+                  width="30"
+                  height="30"
+                  class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100"
+                />
+              </a>
+            </li>
+            <li
+              class="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-black"
+            >
+              <div class="relative mb-9 h-[70px] w-[70px]">
+                <img src="./images/service-icon-black-2.svg" alt="" />
+                <img
+                  src="./images/service-icon-orange-2.svg"
+                  alt=""
+                  width="70"
+                  height="70"
+                  class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100"
+                />
+              </div>
+              <h3
+                class="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white text-[28px]"
+              >
+                <a class="hover:text-[#FE330A]" href="">Resource Flexibility</a>
+              </h3>
+              <p class="mb-12 duration-300 group-hover:text-white">
+                This is an excellent option for people & small businesses who
+                are starting out.
+              </p>
+              <a
+                class="relative inline-block h-[30px] w-[30px] duration-300"
+                href=""
+              >
+                <img
+                  src="./images/arrow-right-black.svg"
+                  alt=""
+                  width="30"
+                  height="30"
+                />
+                <img
+                  src="./images/arrow-right-orange.svg"
+                  alt=""
+                  width="30"
+                  height="30"
+                  class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100"
+                />
+              </a>
+            </li>
+            <li
+              class="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-black"
+            >
+              <div class="relative mb-9 h-[70px] w-[70px]">
+                <img
+                  src="./images/service-icon-black-3.svg"
+                  alt=""
+                  width="70"
+                  height="70"
+                />
+                <img
+                  src="./images/service-icon-orange-3.svg"
+                  alt=""
+                  width="70"
+                  height="70"
+                  class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100"
+                />
+              </div>
+              <h3
+                class="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white text-[28px]"
+              >
+                <a class="hover:text-[#FE330A]" href="">Resource Flexibility</a>
+              </h3>
+              <p class="mb-12 duration-300 group-hover:text-white">
+                This is an excellent option for people & small businesses who
+                are starting out.
+              </p>
+              <a
+                class="relative inline-block h-[30px] w-[30px] duration-300"
+                href=""
+              >
+                <img
+                  src="./images/arrow-right-black.svg"
+                  alt=""
+                  width="30"
+                  height="30"
+                />
+                <img
+                  src="./images/arrow-right-orange.svg"
+                  alt=""
+                  width="30"
+                  height="30"
+                  class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100"
+                />
+              </a>
+            </li>
+            <li
+              class="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-black"
+            >
+              <div class="relative mb-9 h-[70px] w-[70px]">
+                <img
+                  src="./images/service-icon-black-4.svg"
+                  alt=""
+                  width="70"
+                  height="70"
+                />
+                <img
+                  src="./images/service-icon-orange-4.svg"
+                  alt=""
+                  width="70"
+                  height="70"
+                  class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100"
+                />
+              </div>
+              <h3
+                class="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white text-[28px]"
+              >
+                <a class="hover:text-[#FE330A]" href="">Resource Flexibility</a>
+              </h3>
+              <p class="mb-12 duration-300 group-hover:text-white">
+                This is an excellent option for people & small businesses who
+                are starting out.
+              </p>
+              <a
+                class="relative inline-block h-[30px] w-[30px] duration-300"
+                href=""
+              >
+                <img
+                  src="./images/arrow-right-black.svg"
+                  alt=""
+                  width="30"
+                  height="30"
+                />
+                <img
+                  src="./images/arrow-right-orange.svg"
+                  alt=""
+                  width="30"
+                  height="30"
+                  class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id=""></section>
+    <!-- JS -->
+    <script src="./js/jquery-1.11.0.min.js"></script>
+    <!-- Slick JS -->
+    <script src="./lib/slick/slick.min.js"></script>
+
+    <script>
+      $(".slick-slider").slick({
+        // Chạy vòng tròn
+        infinite: true,
+        // Số lượng item hiển thị
+        slidesToShow: 5,
+
+        // Số lượng item thay đổi khi scroll
+        slidesToScroll: 1,
+
+        // Ẩn hiện mũi tên next or prev item
+        arrows: false,
+
+        // Tự động chuyển slider
+        autoplay: true,
+
+        // Thời gian chuyển slider item (đơn vị ms, 1s = 1000ms)
+        autoplaySpeed: 2000,
+
+        dots: false,
+
+        adaptiveHeight: true,
+      });
+    </script>
+  </body>
+</html>

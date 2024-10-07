@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slick-slider{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.slick-slider img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+
+
+.animate-spin{
+    animation: spin 1s linear infinite;
+}
+
+#section-hero{
+    position: relative;
+    background-color:#efeae3;
+    
+}
+
+#section-hero img {
+    position: relative;
+    z-index: 2
+}
+
+
+
+.global-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1332px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.jobs{
+    transition: 0.7s 0.5s;
+}
+
+a{
+    transition-property: all;
+    transition-timing-function:cubic-bezier(0.4,0,0.2,1);
+    transition-duration: 300ms;
+    transition-timing-function: linear;
+}
+
+a{
+    color:inherit;
+    text-decoration: inherit;
+}
+
+ 
