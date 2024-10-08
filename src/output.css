@@ -701,6 +701,14 @@ video {
   z-index: 1;
 }
 
+.order-1 {
+  order: 1;
+}
+
+.order-2 {
+  order: 2;
+}
+
 .float-start {
   float: inline-start;
 }
@@ -784,12 +792,20 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.mb-7 {
+  margin-bottom: 1.75rem;
+}
+
 .mb-9 {
   margin-bottom: 2.25rem;
 }
 
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-\[2\.5px\] {
+  margin-top: 2.5px;
 }
 
 .box-border {
@@ -941,6 +957,10 @@ video {
 
 .w-\[weird-and-invalid\] {
   width: weird-and-invalid;
+}
+
+.w-auto {
+  width: auto;
 }
 
 .w-full {
@@ -1304,6 +1324,10 @@ video {
   grid-auto-flow: column dense;
 }
 
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
@@ -1492,8 +1516,21 @@ video {
   justify-items: stretch;
 }
 
+.gap-32 {
+  gap: 8rem;
+}
+
 .gap-\[2px\] {
   gap: 2px;
+}
+
+.gap-x-3 {
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
+}
+
+.gap-y-5 {
+  row-gap: 1.25rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1840,6 +1877,10 @@ video {
   border-radius: 50px;
 }
 
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
 .rounded-b {
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -2184,6 +2225,10 @@ video {
   padding-bottom: 5rem;
 }
 
+.pb-\[150px\] {
+  padding-bottom: 150px;
+}
+
 .pt-20 {
   padding-top: 5rem;
 }
@@ -2254,8 +2299,16 @@ video {
   line-height: 1;
 }
 
+.text-\[21px\] {
+  font-size: 21px;
+}
+
 .text-\[28px\] {
   font-size: 28px;
+}
+
+.text-\[80px\] {
+  font-size: 80px;
 }
 
 .text-lg {
@@ -2344,12 +2397,20 @@ video {
   font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
 }
 
+.leading-\[1\.4\] {
+  line-height: 1.4;
+}
+
 .leading-tight {
   line-height: 1.25;
 }
 
 .-tracking-\[0\.5px\] {
   letter-spacing: -0.5px;
+}
+
+.tracking-tighter {
+  letter-spacing: -0.05em;
 }
 
 .text-\[\#336699\]\/\[\.35\] {
@@ -2815,6 +2876,19 @@ a{
   text-decoration: inherit;
 }
 
+h2{
+  font-family: DM Sans, sans-serif;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -2px;
+  --tx-text-opacity:1;
+  color:rgb(0 0 0 / var(--tx-text-opacity));
+}
+
+.font-dmSans{
+  font-family: DM Sans, sans-serif;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -2851,6 +2925,10 @@ a{
       max-width: 1536px;
     }
   }
+}
+
+.last\:mb-0:last-child {
+  margin-bottom: 0px;
 }
 
 .hover\:rotate-0:hover {
@@ -2925,5 +3003,4 @@ a{
     }
   }
 }
-
  

@@ -59,16 +59,4 @@ a{
     text-decoration: inherit;
 }
 
-h2{
-    font-family: DM Sans, sans-serif;
-    font-weight: 700;
-    line-height: 1;
-    letter-spacing: -2px;
-    --tx-text-opacity:1;
-    color:rgb(0 0 0 / var(--tx-text-opacity));
-}
-
-.font-dmSans{
-    font-family: DM Sans, sans-serif;
-}
  
