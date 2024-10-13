@@ -437,64 +437,17 @@
     <section id="funfact-section">
       <div class="mx-auto max-w-[1500px] px-5">
         <div
-          class="grid grid-cols-[1fr_minmax(800px,_1fr)] overflow-hidden rounded-[30px] bg-black jobs"
+          class="grid grid-cols-[1fr_mimax(800px,_1fr)] overflow-hidden rounded-[30px] bg-black"
         >
           <!-- funfact-left -->
-          <div class="relative overflow-hidden rounded-[50px]">
-            <img
-              src="./images/funfact-image.jpg"
-              alt=""
-              width="721"
-              height="784"
-              class="h-full w-full object-cover object-center"
-            />
-            <a
-              href="https://www.youtube.com/watch?v=3nQNiWdeH2Q"
-              class="absolute left-1/2 top-1/2 z-[1] -translate-x-1/2 -translate-y-1/2"
-            >
-              <div
-                class="relative flex h-[120px] w-[120px] items-center justify-center rounded-full border-[3px] border-black text-lg font-bold backdrop-blur-[2px] transition-all duration-300 hover:bg-[#FA340C] hover:text-white"
-              >
+          <div>
+            <img src="./images/funfact-image.jpg" alt="" />
+            <a href="">
+              <div>
                 Play
-                <div
-                  class="absolute -z-[1] h-[110%] w-[110%] animate-[ping_1.5s_ease-in-out_infinite] rounded-full bg-gray-600 opacity-30"
-                ></div>
+                <div></div>
               </div>
             </a>
-          </div>
-          <!-- funfact right -->
-          <div class="self-center px-6 pr-28 pl-16 py-32">
-            <div class="mb-6">
-              <h2 class="text-white text-[80px] leading-none">
-                AI-powered that streamline tasks
-              </h2>
-            </div>
-            <div class="text-left text-[21px] leading-[1.4] text-white">
-              <p class="mb-0">
-                As your business grows or your AI SaaS needs change, you can
-                easily adjust your subscription level to match those needs. This
-                flexibility ensures that AI remains an asset.
-              </p>
-            </div>
-            <div class="my-14 h-[1px] w-full bg-colorCodGray"></div>
-            <ul class="flex flex-row justify-normal gap-x-20 gap-y-8 text-left">
-              <li>
-                <h3 class="text-[#FE330A] text-[120px]">
-                  <span class="counter">92</span>%
-                </h3>
-                <span class="block text-[21px] font-normal text-white"
-                  >Customer service inquiries</span
-                >
-              </li>
-              <li>
-                <h3 class="text-[#FE330A] text-[120px]">
-                  <span class="counter">75</span>%
-                </h3>
-                <span class="block text-[21px] font-normal text-white"
-                  >Using financial institutions</span
-                >
-              </li>
-            </ul>
           </div>
         </div>
       </div>
@@ -503,12 +456,6 @@
     <script src="./js/jquery-1.11.0.min.js"></script>
     <!-- Slick JS -->
     <script src="./lib/slick/slick.min.js"></script>
-
-    <!-- countup -->
-    <script src="./lib/countup/jquery.countup.min.js"></script>
-
-    <!-- Waypoints -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 
     <script>
       $(".slick-slider").slick({
@@ -532,13 +479,6 @@
         dots: false,
 
         adaptiveHeight: true,
-      });
-    </script>
-
-    <script>
-      $(".counter").countUp({
-        time: 2000,
-        delay: 10,
       });
     </script>
   </body>
