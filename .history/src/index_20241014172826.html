@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="./lib/slick/slick.css" />
+
+    <!-- Slick CSS Theme -->
+    <!-- Ko bắt buộc -->
+    <link rel="stylesheet" href="./lib/slick/slick-theme.css" />
+    <!--Nhúng CSS tailwindcss sau khi watch  -->
+    <link rel="stylesheet" href="./output.css" />
+    <title>Azzle</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-[#efeae3] py-6">
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- Header-Logo -->
+        <a href="#">
+          <img src="./images/logo-dark.png" alt="" width="96" height="24" />
+        </a>
+        <!-- Header-nav -->
+        <nav class="space-x-8 flex items-center">
+          <a href="#">Demo</a>
+          <img
+            class="transform rotate-90 hover:transform hover:rotate-0"
+            src="./images/icon-black-cheveron-right.svg"
+            alt=""
+            width="16"
+            height="1"
+          />
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <img
+            class="transform rotate-90 hover:transform hover:rotate-0"
+            src="./images/icon-black-cheveron-right.svg"
+            alt=""
+            width="16"
+            height="1"
+          />
+          <a href="#">Pages</a>
+          <img
+            class="transform rotate-90 hover:transform hover:rotate-0"
+            src="./images/icon-black-cheveron-right.svg"
+            alt=""
+            width="16"
+            height="1"
+          />
+          <a href="#">Contact</a>
+        </nav>
+        <div class="space-x-6">
+          <button
+            class="border border-black px-6 py-2 rounded-[50px] text-black font-bold [transition:all_0.3s_ease-out] bg-[linear-gradient(to_top,_#EFEAE3_50%,_#FE330A_50%)] [background-size:100%_200%] bg-bottom hover:bg-top hover:border-[#FE330A] cursor-pointer"
+          >
+            <span>Login</span>
+          </button>
+          <button
+            class="border border-black px-6 py-2 rounded-[50px] text-white font-bold [transition:all_0.3s_ease-out] bg-[linear-gradient(to_top,_black_50%,_#FE330A_50%)] [background-size:100%_200%] bg-bottom hover:bg-top hover:border-[#FE330A] cursor-pointer"
+          >
+            <span> Sign up free </span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <section
+      id="section-hero"
+      class="flex flex-col items-center text-center py-16 rounded-bl-[30px] rounded-br-[30px]"
+    >
+      <div class="global-container">
+        <h1 class="text-8xl font-bold mb-6">
+          Simplify your SaaS solution with AI
+        </h1>
+        <p class="text-lg font-semibold mb-11">
+          Our AI SAAS tool is a cloud-based software delivery model. It helps
+          businesses forecast demand for products and services and optimize
+          inventory management and supply chain operations.
+        </p>
+        <div class="mb-20">
+          <button
+            class="border border-black px-6 py-4 rounded-[50px] text-white font-bold [transition:all_0.3s_ease-out] bg-[linear-gradient(to_top,_black_50%,_#FE330A_50%)] [background-size:100%_200%] bg-bottom hover:bg-top hover:border-[#FE330A] cursor-pointer"
+          >
+            Get started for free
+          </button>
+          <button
+            class="border border-black px-6 py-4 rounded-[50px] text-black font-bold [transition:all_0.3s_ease-out] bg-[linear-gradient(to_top,_#EFEAE3_50%,_#FE330A_50%)] [background-size:100%_200%] bg-bottom hover:bg-top hover:border-[#FE330A] cursor-pointer"
+          >
+            <span> Learn more </span>
+          </button>
+        </div>
+        <div
+          class="bg-[radial-gradient(50%_50%_at_50%_50%,_#ff9831_0%,_#fe330a_100%)] filter blur-[55px] absolute -right-[150px] top-[370px] z-[1] h-[500px] w-[500px] animate-spin rounded-[500px]"
+        ></div>
+        <div
+          class="bg-[radial-gradient(50%_50%_at_50%_50%,_#ff9831_0%,_#fe330a_100%)] filter blur-[55px] absolute right-[57px] top-[620px] z-[1] h-[450px] w-[450px] animate-spin rounded-[450px]"
+        ></div>
+
+        <div>
+          <img
+            src="./images/hero-dashboard.jpg"
+            width="1296"
+            height="640"
+            alt=""
+            class="h-auto w-full"
+          />
+        </div>
+        <div class="border-t-2 my-16 mx-[110px] border-[#E4E0D8]"></div>
+        <p class="text-lg mb-10">
+          Companies of all sizes trust us to find AI SaaS critical to their
+          growth and innovation
+        </p>
+        <div class="slick-slider">
+          <div><img src="./images/brand-1.png" alt="" /></div>
+          <div><img src="./images/brand-2.png" alt="" /></div>
+          <div><img src="./images/brand-3.png" alt="" /></div>
+          <div><img src="./images/brand-4.png" alt="" /></div>
+          <div><img src="./images/brand-5.png" alt="" /></div>
+          <div><img src="./images/brand-1.png" alt="" /></div>
+          <div><img src="./images/brand-3.png" alt="" /></div>
+        </div>
+      </div>
+    </section>
+    <section id="section-service">
+      <div class="pb-20 pt-20">
+        <div class="global-container">
+          <div class="mb-10 jobs">
+            <div class="max-w-[746px] font-bold text-7xl">
+              <h2>Core features that make it valuable</h2>
+            </div>
+          </div>
+          <ul
+            class="grid grid-cols-4 gap-[2px] overflow-hidden rounded-[10px] border-2 border-black bg-black"
+          >
+            <li
+              class="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-black"
+            >
+              <div class="relative mb-9 h-[70px] w-[70px]">
+                <img
+                  src="./images/service-icon-black-1.svg"
+                  alt=""
+                  width="70"
+                  height="70"
+                />
+                <img
+                  src="./images/service-icon-orange-1.svg"
+                  alt=""
+                  width="70"
+                  height="70"
+                  class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100"
+                />
+              </div>
+              <h3
+                class="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white text-[28px]"
+              >
+                <a class="hover:text-[#FE330A]" href="">Resource Flexibility</a>
+              </h3>
+              <p class="mb-12 duration-300 group-hover:text-white">
+                This is an excellent option for people & small businesses who
+                are starting out.
+              </p>
+              <a
+                class="relative inline-block h-[30px] w-[30px] duration-300"
+                href=""
+              >
+                <img
+                  src="./images/arrow-right-black.svg"
+                  alt=""
+                  width="30"
+                  height="30"
+                />
+                <img
+                  src="./images/arrow-right-orange.svg"
+                  alt=""
+                  width="30"
+                  height="30"
+                  class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100"
+                />
+              </a>
+            </li>
+            <li
+              class="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-black"
+            >
+              <div class="relative mb-9 h-[70px] w-[70px]">
+                <img src="./images/service-icon-black-2.svg" alt="" />
+                <img
+                  src="./images/service-icon-orange-2.svg"
+                  alt=""
+                  width="70"
+                  height="70"
+                  class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100"
+                />
+              </div>
+              <h3
+                class="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white text-[28px]"
+              >
+                <a class="hover:text-[#FE330A]" href="">Resource Flexibility</a>
+              </h3>
+              <p class="mb-12 duration-300 group-hover:text-white">
+                This is an excellent option for people & small businesses who
+                are starting out.
+              </p>
+              <a
+                class="relative inline-block h-[30px] w-[30px] duration-300"
+                href=""
+              >
+                <img
+                  src="./images/arrow-right-black.svg"
+                  alt=""
+                  width="30"
+                  height="30"
+                />
+                <img
+                  src="./images/arrow-right-orange.svg"
+                  alt=""
+                  width="30"
+                  height="30"
+                  class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100"
+                />
+              </a>
+            </li>
+            <li
+              class="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-black"
+            >
+              <div class="relative mb-9 h-[70px] w-[70px]">
+                <img
+                  src="./images/service-icon-black-3.svg"
+                  alt=""
+                  width="70"
+                  height="70"
+                />
+                <img
+                  src="./images/service-icon-orange-3.svg"
+                  alt=""
+                  width="70"
+                  height="70"
+                  class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100"
+                />
+              </div>
+              <h3
+                class="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white text-[28px]"
+              >
+                <a class="hover:text-[#FE330A]" href="">Resource Flexibility</a>
+              </h3>
+              <p class="mb-12 duration-300 group-hover:text-white">
+                This is an excellent option for people & small businesses who
+                are starting out.
+              </p>
+              <a
+                class="relative inline-block h-[30px] w-[30px] duration-300"
+                href=""
+              >
+                <img
+                  src="./images/arrow-right-black.svg"
+                  alt=""
+                  width="30"
+                  height="30"
+                />
+                <img
+                  src="./images/arrow-right-orange.svg"
+                  alt=""
+                  width="30"
+                  height="30"
+                  class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100"
+                />
+              </a>
+            </li>
+            <li
+              class="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-black"
+            >
+              <div class="relative mb-9 h-[70px] w-[70px]">
+                <img
+                  src="./images/service-icon-black-4.svg"
+                  alt=""
+                  width="70"
+                  height="70"
+                />
+                <img
+                  src="./images/service-icon-orange-4.svg"
+                  alt=""
+                  width="70"
+                  height="70"
+                  class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100"
+                />
+              </div>
+              <h3
+                class="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white text-[28px]"
+              >
+                <a class="hover:text-[#FE330A]" href="">Resource Flexibility</a>
+              </h3>
+              <p class="mb-12 duration-300 group-hover:text-white">
+                This is an excellent option for people & small businesses who
+                are starting out.
+              </p>
+              <a
+                class="relative inline-block h-[30px] w-[30px] duration-300"
+                href=""
+              >
+                <img
+                  src="./images/arrow-right-black.svg"
+                  alt=""
+                  width="30"
+                  height="30"
+                />
+                <img
+                  src="./images/arrow-right-orange.svg"
+                  alt=""
+                  width="30"
+                  height="30"
+                  class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="content-section-1">
+      <div class="pb-20">
+        <div class="global-container">
+          <div class="grid grid-cols-2 items-center gap-32">
+            <!-- content-left -->
+            <div class="order-1 overflow-hidden block">
+              <img
+                src="./images/content-image-1.jpg"
+                width="526"
+                height="450"
+                class="h-auto w-auto"
+                alt=""
+              />
+            </div>
+            <!-- content-right -->
+            <div class="order-2 block">
+              <div class="mb-6">
+                <h2 class="text-[80px]">Accessible to a wider audience</h2>
+              </div>
+              <div class="text-[21px] leading-[1.4]">
+                <p class="mb-7 last:mb-0">
+                  Advanced AI capabilities accessible to a broader audience,
+                  including small & medium-sized businesses and individuals who
+                  may not have the resources or expertise to develop.
+                </p>
+                <p class="mb-7 last:mb-0">
+                  Advanced AI capabilities accessible to a broader audience,
+                  including small & medium-sized businesses and individuals who
+                  may not have the resources or expertise to develop.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="content-section-2">
+      <div class="pb-[150px]">
+        <div class="global-container">
+          <div class="grid grid-cols-2 items-center gap-32">
+            <!-- content-left-2 -->
+            <div class="order-2 overflow-hidden rounded-md block">
+              <img
+                src="./images/content-image-2.jpg"
+                width="526"
+                height="450"
+                class="h-auto w-auto"
+                alt=""
+              />
+            </div>
+            <!-- content-right-2 -->
+            <div class="order-1 block">
+              <div class="mb-6">
+                <h2 class="text-[80px]">Providing quick deploy solutions</h2>
+              </div>
+              <div class="text-[21px] leading-[1.4]">
+                <p class="mb-7 last:mb-0">
+                  Our AI SaaS solutions can be quickly deployed, enabling users
+                  to start benefiting from AI capabilities without lengthy setup
+                  and development times in fast-paced industries.
+                </p>
+                <ul
+                  class="flex flex-col gap-y-5 font-dmSans text-[28px] leading-tight tracking-tighter text-black"
+                >
+                  <li class="flex items-start gap-x-3 font-bold">
+                    <div class="mt-[2.5px] h-[30px] w-[30px]">
+                      <img
+                        src="./images/check-circle.svg"
+                        width="30"
+                        height="30"
+                        class="h-full w-full"
+                        alt=""
+                      />
+                    </div>
+                    Ready-to-use AI capabilities system
+                  </li>
+                  <li class="flex items-start gap-x-3 font-bold">
+                    <div class="mt-[2.5px] h-[30px] w-[30px]">
+                      <img
+                        src="./images/check-circle.svg"
+                        width="30"
+                        height="30"
+                        class="h-full w-full"
+                        alt=""
+                      />
+                    </div>
+                    Users can quickly integrate AI features
+                  </li>
+                  <li class="flex items-start gap-x-3 font-bold">
+                    <div class="mt-[2.5px] h-[30px] w-[30px]">
+                      <img
+                        src="./images/check-circle.svg"
+                        width="30"
+                        height="30"
+                        class="h-full w-full"
+                        alt=""
+                      />
+                    </div>
+                    Time savings translate to cost savings
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="funfact-section">
+      <div class="mx-auto max-w-[1500px] px-5">
+        <div
+          class="grid grid-cols-[1fr_minmax(800px,_1fr)] overflow-hidden rounded-[30px] bg-black jobs"
+        >
+          <!-- funfact-left -->
+          <div class="relative overflow-hidden rounded-[50px]">
+            <img
+              src="./images/funfact-image.jpg"
+              alt=""
+              width="721"
+              height="784"
+              class="h-full w-full object-cover object-center"
+            />
+            <a
+              href="https://www.youtube.com/watch?v=3nQNiWdeH2Q"
+              class="absolute left-1/2 top-1/2 z-[1] -translate-x-1/2 -translate-y-1/2"
+            >
+              <div
+                class="relative flex h-[120px] w-[120px] items-center justify-center rounded-full border-[3px] border-black text-lg font-bold backdrop-blur-[2px] transition-all duration-300 hover:bg-[#FA340C] hover:text-white"
+              >
+                Play
+                <div
+                  class="absolute -z-[1] h-[110%] w-[110%] animate-[ping_1.5s_ease-in-out_infinite] rounded-full bg-gray-600 opacity-30"
+                ></div>
+              </div>
+            </a>
+          </div>
+          <!-- funfact right -->
+          <div class="self-center px-6 pr-28 pl-16 py-32">
+            <div class="mb-6">
+              <h2 class="text-white text-[80px] leading-none">
+                AI-powered that streamline tasks
+              </h2>
+            </div>
+            <div class="text-left text-[21px] leading-[1.4] text-white">
+              <p class="mb-0">
+                As your business grows or your AI SaaS needs change, you can
+                easily adjust your subscription level to match those needs. This
+                flexibility ensures that AI remains an asset.
+              </p>
+            </div>
+            <div class="my-14 h-[1px] w-full bg-colorCodGray"></div>
+            <ul class="flex flex-row justify-normal gap-x-20 gap-y-8 text-left">
+              <li>
+                <h3 class="text-[#FE330A] text-[120px]">
+                  <span class="counter">92</span>%
+                </h3>
+                <span class="block text-[21px] font-normal text-white"
+                  >Customer service inquiries</span
+                >
+              </li>
+              <li>
+                <h3 class="text-[#FE330A] text-[120px]">
+                  <span class="counter">75</span>%
+                </h3>
+                <span class="block text-[21px] font-normal text-white"
+                  >Using financial institutions</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing-section">
+      <div class="pt-[130px] pb-[150px]">
+        <div class="global-container">
+          <div class="mb-12 text-center jobs">
+            <div class="mx-auto max-w-[746px] text-[80px]">
+              <h2>Cost-effectively build any software</h2>
+            </div>
+          </div>
+          <div class="max-w-[1400px] mx-auto">
+            <div class="flex justify-center jobs">
+              <div
+                class="inline-flex space-x-4 rounded-[50px] border-2 border-black font-semibold"
+              >
+                <button class="tab-button price-button active">Monthly</button>
+                <button class="tab-button price-button">Annually</button>
+              </div>
+            </div>
+            <div class="mt-20">
+              <ul class="grid grid-cols-3 gap-6">
+                <li
+                  class="group flex flex-col rounded-[10px] bg-[rgba(239,_234,_227,_1)] p-10 transition-all duration-300 ease-linear hover:bg-black jobs"
+                >
+                  <h3
+                    class="font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white"
+                  >
+                    Beginner
+                  </h3>
+                  <span
+                    class="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white"
+                    >Up to 10 members</span
+                  >
+                  <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                  <h4
+                    class="mb-4 font-dmSans text-[80px] font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white"
+                  >
+                    $25<span class="text-lg font-semibold">/Per month</span>
+                  </h4>
+                  <p
+                    class="mb-10 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white"
+                  >
+                    This is an excellent option for people & small businesses
+                    who are starting out.
+                  </p>
+                  <a
+                    href=""
+                    class="button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear bg-[linear-gradient(to_top,_#EFEAE3_50%,_#FE330A_50%)] [background-size:100%_200%] bg-bottom hover:bg-top hover:border-[#FE330A] group-hover:border-[#FE330A] group-hover:text-white"
+                    >Choose the plan</a
+                  >
+                </li>
+                <li
+                  class="group flex flex-col rounded-[10px] bg-[rgba(239,_234,_227,_1)] p-10 transition-all duration-300 ease-linear hover:bg-black jobs"
+                >
+                  <h3
+                    class="font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white"
+                  >
+                    Starter
+                  </h3>
+                  <span
+                    class="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white"
+                    >Up to 50 members</span
+                  >
+                  <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                  <h4
+                    class="mb-4 font-dmSans text-[80px] font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white"
+                  >
+                    $89<span class="text-lg font-semibold">/Per month</span>
+                  </h4>
+                  <p
+                    class="mb-10 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white"
+                  >
+                    This plan is suitable for e-commerce stores as well as
+                    professional blogs.
+                  </p>
+                  <a
+                    href=""
+                    class="button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear bg-[linear-gradient(to_top,_#EFEAE3_50%,_#FE330A_50%)] [background-size:100%_200%] bg-bottom hover:bg-top hover:border-[#FE330A] group-hover:border-[#FE330A] group-hover:text-white"
+                    >Choose the plan</a
+                  >
+                </li>
+                <li
+                  class="group flex flex-col rounded-[10px] bg-[rgba(239,_234,_227,_1)] p-10 transition-all duration-300 ease-linear hover:bg-black jobs"
+                >
+                  <h3
+                    class="font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white"
+                  >
+                    Pro
+                  </h3>
+                  <span
+                    class="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white"
+                    >Up to 100 members</span
+                  >
+                  <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                  <h4
+                    class="mb-4 font-dmSans text-[80px] font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white"
+                  >
+                    $199<span class="text-lg font-semibold">/Per month</span>
+                  </h4>
+
+                  <p
+                    class="mb-10 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white"
+                  >
+                    Ideal for handling complicated projects enterprise-level
+                    projects, and websites.
+                  </p>
+                  <a
+                    href=""
+                    class="button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear bg-[linear-gradient(to_top,_#EFEAE3_50%,_#FE330A_50%)] [background-size:100%_200%] bg-bottom hover:bg-top hover:border-[#FE330A] group-hover:border-[#FE330A] group-hover:text-white"
+                    >Choose the plan</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="fag-section">
+      <div class="pb-[150px]">
+        <div class="global-container">
+          <div class="grid grid-cols-2 gap-y-10">
+            <div class="flex flex-col jobs">
+              <div class="mb-6">
+                <div class="mx-auto max-w-none">
+                  <h2 class="text-[80px]">
+                    Freely ask us for more information
+                  </h2>
+                </div>
+              </div>
+              <div class="text-[21px] lading-[1.4]">
+                <p class="mb-7 last:mb-0">
+                  Our AI SaaS solutions can be quickly deployed, enabling users
+                  to start benefiting from AI capabilities without lengthy setup
+                  and development times in fast-paced industries.
+                </p>
+                <button
+                  class="button border-black mt-5 py-4 rounded-[50px] text-white font-bold [transition:all_0.3s_ease-out] bg-[linear-gradient(to_top,_black_50%,_#FE330A_50%)] [background-size:100%_200%] bg-bottom hover:bg-top hover:border-[#FE330A] cursor-pointer"
+                >
+                  Ask you questions
+                </button>
+              </div>
+            </div>
+            <div class="ml-32 jobs">
+              <ul class="accordion">
+                <li
+                  class="accordion-item border-b-[1px] border-[#DBD6CF] pb-6 pt-6 first:pt-0 last:border-b-0 last:pb-0 active"
+                >
+                  <div
+                    class="accordion-header flex items-center justify-between font-dmSans font-bold lading-[1.2] -tracking-[0.5px] text-black text-[28px]"
+                  >
+                    <p>How do I start AI SaaS?</p>
+                    <div class="accordion-icon">
+                      <img src="./images/plus.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="accordion-content text-[#2C2C2C]">
+                    <p>
+                      Go to the our official website and require users to create
+                      an account. You'll need to provide some basic information
+                      and agree to our terms and conditions.
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="accordion-item border-b-[1px] border-[#DBD6CF] pb-6 pt-6 first:pt-0 last:border-b-0 last:pb-0"
+                >
+                  <div
+                    class="accordion-header flex items-center justify-between font-dmSans font-bold lading-[1.2] -tracking-[0.5px] text-black text-[28px]"
+                  >
+                    <p>Can I customize AI SaaS solutions?</p>
+                    <div class="accordion-icon">
+                      <img src="./images/plus.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="accordion-content text-[#2C2C2C]">
+                    <p>
+                      Go to the our official website and require users to create
+                      an account. You'll need to provide some basic information
+                      and agree to our terms and conditions.
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="accordion-item border-b-[1px] border-[#DBD6CF] pb-6 pt-6 first:pt-0 last:border-b-0 last:pb-0"
+                >
+                  <div
+                    class="accordion-header flex items-center justify-between font-dmSans font-bold lading-[1.2] -tracking-[0.5px] text-black text-[28px]"
+                  >
+                    <p>How can AI benefit my business?</p>
+                    <div class="accordion-icon">
+                      <img src="./images/plus.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="accordion-content text-[#2C2C2C]">
+                    <p>
+                      Go to the our official website and require users to create
+                      an account. You'll need to provide some basic information
+                      and agree to our terms and conditions.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- JS -->
+    <script src="./js/jquery-1.11.0.min.js"></script>
+    <!-- Slick JS -->
+    <script src="./lib/slick/slick.min.js"></script>
+
+    <!-- countup -->
+    <script src="./lib/countup/jquery.countup.min.js"></script>
+
+    <!-- Waypoints -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+    <script>
+      $(".slick-slider").slick({
+        // Chạy vòng tròn
+        infinite: true,
+        // Số lượng item hiển thị
+        slidesToShow: 5,
+
+        // Số lượng item thay đổi khi scroll
+        slidesToScroll: 1,
+
+        // Ẩn hiện mũi tên next or prev item
+        arrows: false,
+
+        // Tự động chuyển slider
+        autoplay: true,
+
+        // Thời gian chuyển slider item (đơn vị ms, 1s = 1000ms)
+        autoplaySpeed: 2000,
+
+        dots: false,
+
+        adaptiveHeight: true,
+      });
+    </script>
+
+    <script>
+      $(".counter").countUp({
+        time: 2000,
+        delay: 10,
+      });
+    </script>
+  </body>
+</html>
