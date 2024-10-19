@@ -267,28 +267,5 @@ h2{
 
 
 .horizontal-slide-from-right-to-left{
-  animation:horizontal-slide-from-right-to-left linear 10s infinite;
-}
-
-
-.horizontal-slide-from-left-to-right{
-  animation:horizontal-slide-from-left-to-right linear 10s infinite;
-}
-
-@keyframes horizontal-slide-from-right-to-left{
-  from{
-    transform: translateX(0);
-  }
-  to{
-    transform: translateX(-50%);
-  }
-}
-
-@keyframes horizontal-slide-from-left-to-right{
-  from{
-    transform: translateX(-50%);
-  }
-  to{
-    transform: translateX(0);
-  }
+  animation: horizontal-slide-from-right-to-left linear 10s;
 }
