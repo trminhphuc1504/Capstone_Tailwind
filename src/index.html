@@ -33,35 +33,52 @@
             <img src="./images/logo-dark.png" alt="" width="96" height="24" />
           </a>
           <!-- Header-nav -->
-          <nav class="space-x-8 flex items-center">
-            <a href="#">Demo</a>
-            <img
-              class="transform rotate-90 hover:transform hover:rotate-0"
-              src="./images/icon-black-cheveron-right.svg"
-              alt=""
-              width="16"
-              height="1"
-            />
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <img
-              class="transform rotate-90 hover:transform hover:rotate-0"
-              src="./images/icon-black-cheveron-right.svg"
-              alt=""
-              width="16"
-              height="1"
-            />
-            <a href="#">Pages</a>
-            <img
-              class="transform rotate-90 hover:transform hover:rotate-0"
-              src="./images/icon-black-cheveron-right.svg"
-              alt=""
-              width="16"
-              height="1"
-            />
-            <a href="#">Contact</a>
+          <nav class="">
+            <ul class="flex space-x-8 xl:visible lg:invisible">
+              <li>
+                <!--Demo-->
+                <div class="item flex items-center space-x-2">
+                  <a href="#" class="font-semibold">Demo</a>
+                  <img
+                    class="transform rotate-90 mt-1 hover:-rotate-0 duration-300"
+                    src="./images/icon-black-cheveron-right.svg"
+                    alt=""
+                    width="16"
+                    height="16"
+                  />
+                </div>
+              </li>
+              <li class="font-semibold">About</li>
+              <li>
+                <!--Services-->
+                <div class="item flex items-center space-x-2">
+                  <a href="#" class="font-semibold">Services</a>
+                  <img
+                    class="transform rotate-90 mt-1 hover:-rotate-0 duration-300 z-2"
+                    src="./images/icon-black-cheveron-right.svg"
+                    alt=""
+                    width="16"
+                    height="16"
+                  />
+                </div>
+              </li>
+              <li>
+                <!--Page-->
+                <div class="item flex items-center space-x-2 relative">
+                  <a href="#" class="font-semibold">Page</a>
+                  <img
+                    class="transform rotate-90 mt-1 hover:-rotate-0 duration-300"
+                    src="./images/icon-black-cheveron-right.svg"
+                    alt=""
+                    width="16"
+                    height="16"
+                  />
+                </div>
+              </li>
+              <li class="font-semibold">Contact</li>
+            </ul> 
           </nav>
-          <div class="space-x-6">
+          <div class="space-x-6 xl:visible lg:invisible">
             <button
               class="border border-black px-6 py-2 rounded-[50px] text-black font-bold [transition:all_0.3s_ease-out] bg-[linear-gradient(to_top,_#EFEAE3_50%,_#FE330A_50%)] [background-size:100%_200%] bg-bottom hover:bg-top hover:border-[#FE330A] cursor-pointer"
             >
@@ -72,14 +89,15 @@
             >
               <span> Sign up free </span>
             </button>
+
           </div>
         </div>
       </header>
       <section
         id="section-hero"
-        class="flex flex-col items-center text-center py-16 rounded-bl-[30px] rounded-br-[30px]"
+        class="flex flex-col items-center text-center py-16 rounded-bl-[30px] rounded-br-[30px] m-w-[500px]"
       >
-        <div class="global-container">
+        <div class="global-container m-auto">
           <h1 class="text-8xl font-bold mb-6">
             Simplify your SaaS solution with AI
           </h1>

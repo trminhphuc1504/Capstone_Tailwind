@@ -11,5 +11,14 @@ module.exports = {
       }
     },
   },
+  theme: {
+    extend: {
+      screens: {
+        // => @media (min-width: 0px and max-width: 639px) { ... }
+        lg: { min: '0px', max: '1024px' },
+        xl: { min: '1024px', max: '1536px'}
+      },
+    },
+  },
   plugins: [],
 }
