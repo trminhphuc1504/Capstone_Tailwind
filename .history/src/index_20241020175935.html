@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="./lib/slick/slick.css" />
+
+    <!-- Slick CSS Theme -->
+    <!-- Ko bắt buộc -->
+    <link rel="stylesheet" href="./lib/slick/slick-theme.css" />
+    <!--Nhúng CSS tailwindcss sau khi watch  -->
+    <link rel="stylesheet" href="./output.css" />
+    <title>Azzle</title>
+  </head>
+  <body>
+    <div class="relative z-[1] bg-white">
+      <!-- Header -->
+      <header class="bg-[#efeae3] py-6">
+        <div class="container mx-auto flex justify-between items-center">
+          <!-- Header-Logo -->
+          <a href="#">
+            <img src="./images/logo-dark.png" alt="" width="96" height="24" />
+          </a>
+          <!-- Header-nav -->
+          <nav class="">
+            <ul
+              class="flex space-x-8 xl:visible lg:invisible sm:invisible md:invisible"
+            >
+              <li>
+                <!--Demo-->
+                <div class="item flex items-center space-x-2">
+                  <a href="#" class="font-semibold">Demo</a>
+                  <img
+                    class="transform rotate-90 mt-1 hover:-rotate-0 duration-300"
+                    src="./images/icon-black-cheveron-right.svg"
+                    alt=""
+                    width="16"
+                    height="16"
+                  />
+                </div>
+              </li>
+              <li class="font-semibold">About</li>
+              <li>
+                <!--Services-->
+                <div class="item flex items-center space-x-2">
+                  <a href="#" class="font-semibold">Services</a>
+                  <img
+                    class="transform rotate-90 mt-1 hover:-rotate-0 duration-300 z-2"
+                    src="./images/icon-black-cheveron-right.svg"
+                    alt=""
+                    width="16"
+                    height="16"
+                  />
+                </div>
+              </li>
+              <li>
+                <!--Page-->
+                <div class="item flex items-center space-x-2 relative">
+                  <a href="#" class="font-semibold">Page</a>
+                  <img
+                    class="transform rotate-90 mt-1 hover:-rotate-0 duration-300"
+                    src="./images/icon-black-cheveron-right.svg"
+                    alt=""
+                    width="16"
+                    height="16"
+                  />
+                </div>
+              </li>
+              <li class="font-semibold">Contact</li>
+            </ul>
+          </nav>
+          <div
+            class="space-x-6 xl:visible lg:invisible sm:invisible md:invisible"
+          >
+            <button
+              class="border border-black px-6 py-2 rounded-[50px] text-black font-bold [transition:all_0.3s_ease-out] bg-[linear-gradient(to_top,_#EFEAE3_50%,_#FE330A_50%)] [background-size:100%_200%] bg-bottom hover:bg-top hover:border-[#FE330A] cursor-pointer"
+            >
+              <span>Login</span>
+            </button>
+            <button
+              class="border border-black px-6 py-2 rounded-[50px] text-white font-bold [transition:all_0.3s_ease-out] bg-[linear-gradient(to_top,_black_50%,_#FE330A_50%)] [background-size:100%_200%] bg-bottom hover:bg-top hover:border-[#FE330A] cursor-pointer"
+            >
+              <span> Sign up free </span>
+            </button>
+          </div>
+          <button class="xl:invisible lg:visible sm:visiblemd:visible">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+        <section
+          id="section-hero"
+          class="flex flex-col items-center text-center py-16 rounded-bl-[30px] rounded-br-[30px] m-w-[500px] pb-20 pt-28 lg:rounded-bl-[50px] lg:rounded-br-[50px] lg:pb-24 lg:pt-32 xl:pt-40 xxl:pb-[133px] xxl:pt-[195px]"
+        >
+          <div class="global-container m-auto">
+            <h1 class="text-8xl font-bold mb-6">
+              Simplify your SaaS solution with AI
+            </h1>
+            <p class="text-lg font-semibold mb-11">
+              Our AI SAAS tool is a cloud-based software delivery model. It
+              helps businesses forecast demand for products and services and
+              optimize inventory management and supply chain operations.
+            </p>
+            <div class="mb-20">
+              <button
+                class="border border-black px-6 py-4 rounded-[50px] text-white font-bold [transition:all_0.3s_ease-out] bg-[linear-gradient(to_top,_black_50%,_#FE330A_50%)] [background-size:100%_200%] bg-bottom hover:bg-top hover:border-[#FE330A] cursor-pointer"
+              >
+                Get started for free
+              </button>
+              <button
+                class="border border-black px-6 py-4 rounded-[50px] text-black font-bold [transition:all_0.3s_ease-out] bg-[linear-gradient(to_top,_#EFEAE3_50%,_#FE330A_50%)] [background-size:100%_200%] bg-bottom hover:bg-top hover:border-[#FE330A] cursor-pointer"
+              >
+                <span> Learn more </span>
+              </button>
+            </div>
+            <div
+              class="bg-[radial-gradient(50%_50%_at_50%_50%,_#ff9831_0%,_#fe330a_100%)] filter blur-[55px] absolute -right-[150px] top-[370px] z-[1] h-[500px] w-[500px] rounded-[500px]"
+            ></div>
+            <div
+              class="bg-[radial-gradient(50%_50%_at_50%_50%,_#ff9831_0%,_#fe330a_100%)] filter blur-[55px] absolute right-[57px] top-[620px] z-[1] h-[450px] w-[450px] rounded-[450px]"
+            ></div>
+
+            <div>
+              <img
+                src="./images/hero-dashboard.jpg"
+                width="1296"
+                height="640"
+                alt=""
+                class="h-auto w-full"
+              />
+            </div>
+            <div class="border-t-2 my-16 mx-[110px] border-[#E4E0D8]"></div>
+            <p class="text-lg mb-10">
+              Companies of all sizes trust us to find AI SaaS critical to their
+              growth and innovation
+            </p>
+            <div class="slick-slider">
+              <div><img src="./images/brand-1.png" alt="" /></div>
+              <div><img src="./images/brand-2.png" alt="" /></div>
+              <div><img src="./images/brand-3.png" alt="" /></div>
+              <div><img src="./images/brand-4.png" alt="" /></div>
+              <div><img src="./images/brand-5.png" alt="" /></div>
+              <div><img src="./images/brand-1.png" alt="" /></div>
+              <div><img src="./images/brand-3.png" alt="" /></div>
+            </div>
+          </div>
+        </section>
+      </header>
+
+      <section id="section-service">
+        <div class="pb-20 pt-20 xl:pb-[150px] xl:-[130px]">
+          <div class="global-container">
+            <div class="mb-10 lg:mb-16 xl:mb-20 jobs">
+              <div
+                class="md:max-w-sm lg:max-w-xl xl:max-w-[746px] xxl:text-7xl"
+              >
+                <h2>Core features that make it valuable</h2>
+              </div>
+            </div>
+            <ul
+              class="grid grid-cols-1 gap-[2px] overflow-hidden rounded-[10px] border-2 border-black bg-black sm:grid-cols-2 lg:grid-cols-4 jobs"
+            >
+              <li
+                class="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-black"
+              >
+                <div class="relative mb-9 h-[70px] w-[70px]">
+                  <img
+                    src="./images/service-icon-black-1.svg"
+                    alt=""
+                    width="70"
+                    height="70"
+                  />
+                  <img
+                    src="./images/service-icon-orange-1.svg"
+                    alt=""
+                    width="70"
+                    height="70"
+                    class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100"
+                  />
+                </div>
+                <h3
+                  class="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white text-[28px]"
+                >
+                  <a class="hover:text-[#FE330A]" href=""
+                    >Resource Flexibility</a
+                  >
+                </h3>
+                <p class="mb-12 duration-300 group-hover:text-white">
+                  This is an excellent option for people & small businesses who
+                  are starting out.
+                </p>
+                <a
+                  class="relative inline-block h-[30px] w-[30px] duration-300"
+                  href=""
+                >
+                  <img
+                    src="./images/arrow-right-black.svg"
+                    alt=""
+                    width="30"
+                    height="30"
+                  />
+                  <img
+                    src="./images/arrow-right-orange.svg"
+                    alt=""
+                    width="30"
+                    height="30"
+                    class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100"
+                  />
+                </a>
+              </li>
+              <li
+                class="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-black"
+              >
+                <div class="relative mb-9 h-[70px] w-[70px]">
+                  <img src="./images/service-icon-black-2.svg" alt="" />
+                  <img
+                    src="./images/service-icon-orange-2.svg"
+                    alt=""
+                    width="70"
+                    height="70"
+                    class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100"
+                  />
+                </div>
+                <h3
+                  class="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white text-[28px]"
+                >
+                  <a class="hover:text-[#FE330A]" href=""
+                    >Resource Flexibility</a
+                  >
+                </h3>
+                <p class="mb-12 duration-300 group-hover:text-white">
+                  This is an excellent option for people & small businesses who
+                  are starting out.
+                </p>
+                <a
+                  class="relative inline-block h-[30px] w-[30px] duration-300"
+                  href=""
+                >
+                  <img
+                    src="./images/arrow-right-black.svg"
+                    alt=""
+                    width="30"
+                    height="30"
+                  />
+                  <img
+                    src="./images/arrow-right-orange.svg"
+                    alt=""
+                    width="30"
+                    height="30"
+                    class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100"
+                  />
+                </a>
+              </li>
+              <li
+                class="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-black"
+              >
+                <div class="relative mb-9 h-[70px] w-[70px]">
+                  <img
+                    src="./images/service-icon-black-3.svg"
+                    alt=""
+                    width="70"
+                    height="70"
+                  />
+                  <img
+                    src="./images/service-icon-orange-3.svg"
+                    alt=""
+                    width="70"
+                    height="70"
+                    class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100"
+                  />
+                </div>
+                <h3
+                  class="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white text-[28px]"
+                >
+                  <a class="hover:text-[#FE330A]" href=""
+                    >Resource Flexibility</a
+                  >
+                </h3>
+                <p class="mb-12 duration-300 group-hover:text-white">
+                  This is an excellent option for people & small businesses who
+                  are starting out.
+                </p>
+                <a
+                  class="relative inline-block h-[30px] w-[30px] duration-300"
+                  href=""
+                >
+                  <img
+                    src="./images/arrow-right-black.svg"
+                    alt=""
+                    width="30"
+                    height="30"
+                  />
+                  <img
+                    src="./images/arrow-right-orange.svg"
+                    alt=""
+                    width="30"
+                    height="30"
+                    class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100"
+                  />
+                </a>
+              </li>
+              <li
+                class="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-black"
+              >
+                <div class="relative mb-9 h-[70px] w-[70px]">
+                  <img
+                    src="./images/service-icon-black-4.svg"
+                    alt=""
+                    width="70"
+                    height="70"
+                  />
+                  <img
+                    src="./images/service-icon-orange-4.svg"
+                    alt=""
+                    width="70"
+                    height="70"
+                    class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100"
+                  />
+                </div>
+                <h3
+                  class="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white text-[28px]"
+                >
+                  <a class="hover:text-[#FE330A]" href=""
+                    >Resource Flexibility</a
+                  >
+                </h3>
+                <p class="mb-12 duration-300 group-hover:text-white">
+                  This is an excellent option for people & small businesses who
+                  are starting out.
+                </p>
+                <a
+                  class="relative inline-block h-[30px] w-[30px] duration-300"
+                  href=""
+                >
+                  <img
+                    src="./images/arrow-right-black.svg"
+                    alt=""
+                    width="30"
+                    height="30"
+                  />
+                  <img
+                    src="./images/arrow-right-orange.svg"
+                    alt=""
+                    width="30"
+                    height="30"
+                    class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="content-section-1">
+        <div class="pb-20 xl:pb-[150px]">
+          <div class="global-container">
+            <div
+              class="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20 xl:gap-28 xxl:gap-32"
+            >
+              <!-- content-left -->
+              <div class="order-2 overflow-hidden rounded-md md:order-1 jobs">
+                <img
+                  src="./images/content-image-1.jpg"
+                  width="526"
+                  height="450"
+                  class="h-auto w-auto"
+                  alt=""
+                />
+              </div>
+              <!-- content-right -->
+              <div class="order-1 md:order-2 jobs">
+                <div class="mb-6">
+                  <h2 class="text-[80px]">Accessible to a wider audience</h2>
+                </div>
+                <div class="text-[21px] leading-[1.4]">
+                  <p class="mb-7 last:mb-0">
+                    Advanced AI capabilities accessible to a broader audience,
+                    including small & medium-sized businesses and individuals
+                    who may not have the resources or expertise to develop.
+                  </p>
+                  <p class="mb-7 last:mb-0">
+                    Advanced AI capabilities accessible to a broader audience,
+                    including small & medium-sized businesses and individuals
+                    who may not have the resources or expertise to develop.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="content-section-2">
+        <div class="pb-20 xl:pb-[150px]">
+          <div class="global-container">
+            <div
+              class="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20 xl:grid-cols-[minmax(0,_1,2fr)_1fr] xl:gap-28 xxl:gap-32"
+            >
+              <!-- content-left-2 -->
+              <div class="order-2 overflow-hidden rounded-md jobs">
+                <img
+                  src="./images/content-image-2.jpg"
+                  width="526"
+                  height="450"
+                  class="h-auto w-auto"
+                  alt=""
+                />
+              </div>
+              <!-- content-right-2 -->
+              <div class="order-1 jobs">
+                <div class="mb-6">
+                  <h2 class="text-[80px]">Providing quick deploy solutions</h2>
+                </div>
+                <div class="text-lg lg:text-[21px] leading-[1.4]">
+                  <p class="mb-7 last:mb-0">
+                    Our AI SaaS solutions can be quickly deployed, enabling
+                    users to start benefiting from AI capabilities without
+                    lengthy setup and development times in fast-paced
+                    industries.
+                  </p>
+                  <ul
+                    class="flex flex-col gap-y-5 font-dmSans text-xl leading-tight tracking-tighter text-black lg:mt-12 lg:text-[28px]"
+                  >
+                    <li class="flex items-start gap-x-3 font-bold">
+                      <div class="mt-[2.5px] h-[30px] w-[30px]">
+                        <img
+                          src="./images/check-circle.svg"
+                          width="30"
+                          height="30"
+                          class="h-full w-full"
+                          alt=""
+                        />
+                      </div>
+                      Ready-to-use AI capabilities system
+                    </li>
+                    <li class="flex items-start gap-x-3 font-bold">
+                      <div class="mt-[2.5px] h-[30px] w-[30px]">
+                        <img
+                          src="./images/check-circle.svg"
+                          width="30"
+                          height="30"
+                          class="h-full w-full"
+                          alt=""
+                        />
+                      </div>
+                      Users can quickly integrate AI features
+                    </li>
+                    <li class="flex items-start gap-x-3 font-bold">
+                      <div class="mt-[2.5px] h-[30px] w-[30px]">
+                        <img
+                          src="./images/check-circle.svg"
+                          width="30"
+                          height="30"
+                          class="h-full w-full"
+                          alt=""
+                        />
+                      </div>
+                      Time savings translate to cost savings
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="funfact-section">
+        <div class="mx-auto max-w-[1500px] px-5">
+          <div
+            class="grid grid-cols-1 overflow-hidden rounded-[30px] bg-black jobs lg:rounded-[50px] xl:grid-cols-[minmax(400px,_1fr)_1.5fr] xxl:grid-cols-[1fr_minmax(800px,_1fr)]"
+          >
+            <!-- funfact-left -->
+            <div
+              class="relative overflow-hidden rounded-[30px] lg:rounded-[50px]"
+            >
+              <img
+                src="./images/funfact-image.jpg"
+                alt=""
+                width="721"
+                height="784"
+                class="h-full w-full object-cover object-center"
+              />
+              <a
+                href="https://www.youtube.com/watch?v=3nQNiWdeH2Q"
+                class="absolute left-1/2 top-1/2 z-[1] -translate-x-1/2 -translate-y-1/2"
+              >
+                <div
+                  class="relative flex h-[120px] w-[120px] items-center justify-center rounded-full border-[3px] border-black text-lg font-bold backdrop-blur-[2px] transition-all duration-300 hover:bg-[#FA340C] hover:text-white"
+                >
+                  Play
+                  <div
+                    class="absolute -z-[1] h-[110%] w-[110%] animate-[ping_1.5s_ease-in-out_infinite] rounded-full bg-gray-600 opacity-30"
+                  ></div>
+                </div>
+              </a>
+            </div>
+            <!-- funfact right -->
+            <div
+              class="self-center px-6 py-16 sm:py-20 md:px-16 xl:px-10 xl:py-24 xxl:py-32 xxl:pl-16 xxl:pr-28"
+            >
+              <div class="mb-8 lg:mb-16 xl:mb-6">
+                <h2 class="text-white text-[80px] leading-none">
+                  AI-powered that streamline tasks
+                </h2>
+              </div>
+              <div
+                class="text-left text-lg lg:text-[21px] leading-[1.4] text-white"
+              >
+                <p class="mb-0">
+                  As your business grows or your AI SaaS needs change, you can
+                  easily adjust your subscription level to match those needs.
+                  This flexibility ensures that AI remains an asset.
+                </p>
+              </div>
+              <div class="my-14 h-[1px] w-full bg-colorCodGray"></div>
+              <ul
+                class="flex flex-col justify-center gap-x-11 gap-y-8 text-center sm:flex-row md:text-left xl:justify-normal xl:text-left xxl:gap-x-20"
+              >
+                <li>
+                  <h3 class="text-[#FE330A] text-[120px]">
+                    <span class="counter">92</span>%
+                  </h3>
+                  <span class="block text-[21px] font-normal text-white"
+                    >Customer service inquiries</span
+                  >
+                </li>
+                <li>
+                  <h3 class="text-[#FE330A] text-[120px]">
+                    <span class="counter">75</span>%
+                  </h3>
+                  <span class="block text-[21px] font-normal text-white"
+                    >Using financial institutions</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing-section">
+        <div class="pb-20 pt-20 xl:pt-[130px] xl:pb-[150px]">
+          <div class="global-container">
+            <div class="mb-10 text-center lg:mb-12 jobs">
+              <div
+                class="mx-auto md:max-w-xs lg:max-w-vl xl:max-w-[746px] text-[80px]"
+              >
+                <h2>Cost-effectively build any software</h2>
+              </div>
+            </div>
+            <div class="max-w-[1400px] mx-auto">
+              <div class="flex justify-center jobs">
+                <div
+                  class="inline-flex space-x-4 rounded-[50px] border-2 border-black font-semibold"
+                >
+                  <button class="tab-button price-button active">
+                    Monthly
+                  </button>
+                  <button class="tab-button price-button">Annually</button>
+                </div>
+              </div>
+              <div class="mt-12 lg:mt-16 xl:mt-20">
+                <ul
+                  class="grid grid-cols-1 gap-6 md:grid-cols-2 xxl:grid-cols-3"
+                >
+                  <li
+                    class="group flex flex-col rounded-[10px] bg-[rgba(239,_234,_227,_1)] p-10 transition-all duration-300 ease-linear hover:bg-black jobs"
+                  >
+                    <h3
+                      class="font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white"
+                    >
+                      Beginner
+                    </h3>
+                    <span
+                      class="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white"
+                      >Up to 10 members</span
+                    >
+                    <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                    <h4
+                      class="mb-4 font-dmSans text-[80px] font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white"
+                    >
+                      $25<span class="text-lg font-semibold">/Per month</span>
+                    </h4>
+                    <p
+                      class="mb-10 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white"
+                    >
+                      This is an excellent option for people & small businesses
+                      who are starting out.
+                    </p>
+                    <a
+                      href=""
+                      class="button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear bg-[#EFEAE3] [background-size:100%_200%] bg-bottom group-hover:bg-[black] hover:border-[#FE330A] group-hover:border-[#FE330A] hover:bg-[linear-gradient(to_top,_black_50%,_#FE330A_50%)] hover:bg-top group-hover:text-white"
+                      >Choose the plan</a
+                    >
+                  </li>
+                  <li
+                    class="group flex flex-col rounded-[10px] bg-[rgba(239,_234,_227,_1)] p-10 transition-all duration-300 ease-linear hover:bg-black jobs"
+                  >
+                    <h3
+                      class="font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white"
+                    >
+                      Starter
+                    </h3>
+                    <span
+                      class="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white"
+                      >Up to 50 members</span
+                    >
+                    <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                    <h4
+                      class="mb-4 font-dmSans text-[80px] font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white"
+                    >
+                      $89<span class="text-lg font-semibold">/Per month</span>
+                    </h4>
+                    <p
+                      class="mb-10 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white"
+                    >
+                      This plan is suitable for e-commerce stores as well as
+                      professional blogs.
+                    </p>
+                    <a
+                      href=""
+                      class="button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear bg-[#EFEAE3] [background-size:100%_200%] bg-bottom group-hover:bg-[black] hover:border-[#FE330A] group-hover:border-[#FE330A] hover:bg-[linear-gradient(to_top,_black_50%,_#FE330A_50%)] hover:bg-top group-hover:text-white"
+                      >Choose the plan</a
+                    >
+                  </li>
+                  <li
+                    class="group flex flex-col rounded-[10px] bg-[rgba(239,_234,_227,_1)] p-10 transition-all duration-300 ease-linear hover:bg-black jobs"
+                  >
+                    <h3
+                      class="font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white"
+                    >
+                      Pro
+                    </h3>
+                    <span
+                      class="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white"
+                      >Up to 100 members</span
+                    >
+                    <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                    <h4
+                      class="mb-4 font-dmSans text-[80px] font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white"
+                    >
+                      $199<span class="text-lg font-semibold">/Per month</span>
+                    </h4>
+
+                    <p
+                      class="mb-10 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white"
+                    >
+                      Ideal for handling complicated projects enterprise-level
+                      projects, and websites.
+                    </p>
+                    <a
+                      href=""
+                      class="button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear bg-[#EFEAE3] [background-size:100%_200%] bg-bottom group-hover:bg-[black] hover:border-[#FE330A] group-hover:border-[#FE330A] hover:bg-[linear-gradient(to_top,_black_50%,_#FE330A_50%)] hover:bg-top group-hover:text-white"
+                      >Choose the plan</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="fag-section">
+        <div class="pb-20 xl:pb-[150px]">
+          <div class="global-container">
+            <div class="grid grid-cols-1 gap-y-10 md:grid-cols-2">
+              <div class="flex flex-col jobs">
+                <div class="mb-6">
+                  <div class="mx-auto md:mx-0 md:max-w-none">
+                    <h2 class="text-[80px]">
+                      Freely ask us for more information
+                    </h2>
+                  </div>
+                </div>
+                <div class="text-lg lg:text-[21px] leading-[1.4]">
+                  <p class="mb-7 last:mb-0">
+                    Our AI SaaS solutions can be quickly deployed, enabling
+                    users to start benefiting from AI capabilities without
+                    lengthy setup and development times in fast-paced
+                    industries.
+                  </p>
+                  <button
+                    class="button border-black mt-5 py-4 rounded-[50px] text-white font-bold [transition:all_0.3s_ease-out] bg-[linear-gradient(to_top,_black_50%,_#FE330A_50%)] [background-size:100%_200%] bg-bottom hover:bg-top hover:border-[#FE330A] cursor-pointer"
+                  >
+                    Ask you questions
+                  </button>
+                </div>
+              </div>
+              <div class="md:mx-10 lg:ml-20 xl:ml-32 jobs">
+                <ul class="accordion">
+                  <li
+                    class="accordion-item border-b-[1px] border-[#DBD6CF] pb-6 pt-6 first:pt-0 last:border-b-0 last:pb-0 active"
+                  >
+                    <div
+                      class="accordion-header flex items-center justify-between font-dmSans font-bold lading-[1.2] -tracking-[0.5px] text-black text-xl lg:text-[28px]"
+                    >
+                      <p>How do I start AI SaaS?</p>
+                      <div class="accordion-icon">
+                        <img src="./images/plus.svg" alt="" />
+                      </div>
+                    </div>
+                    <div class="accordion-content text-[#2C2C2C]">
+                      <p>
+                        Go to the our official website and require users to
+                        create an account. You'll need to provide some basic
+                        information and agree to our terms and conditions.
+                      </p>
+                    </div>
+                  </li>
+                  <li
+                    class="accordion-item border-b-[1px] border-[#DBD6CF] pb-6 pt-6 first:pt-0 last:border-b-0 last:pb-0 active"
+                  >
+                    <div
+                      class="accordion-header flex items-center justify-between font-dmSans font-bold lading-[1.2] -tracking-[0.5px] text-black text-xl lg:text-[28px]"
+                    >
+                      <p>Can I customize AI SaaS solutions?</p>
+                      <div class="accordion-icon">
+                        <img src="./images/plus.svg" alt="" />
+                      </div>
+                    </div>
+                    <div class="accordion-content text-[#2C2C2C]">
+                      <p>
+                        Go to the our official website and require users to
+                        create an account. You'll need to provide some basic
+                        information and agree to our terms and conditions.
+                      </p>
+                    </div>
+                  </li>
+                  <li
+                    class="accordion-item border-b-[1px] border-[#DBD6CF] pb-6 pt-6 first:pt-0 last:border-b-0 last:pb-0 active"
+                  >
+                    <div
+                      class="accordion-header flex items-center justify-between font-dmSans font-bold lading-[1.2] -tracking-[0.5px] text-black text-xl lg:text-[28px]"
+                    >
+                      <p>How can AI benefit my business?</p>
+                      <div class="accordion-icon">
+                        <img src="./images/plus.svg" alt="" />
+                      </div>
+                    </div>
+                    <div class="accordion-content text-[#2C2C2C]">
+                      <p>
+                        Go to the our official website and require users to
+                        create an account. You'll need to provide some basic
+                        information and agree to our terms and conditions.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonial-section">
+        <div class="bg-black pb-40 pt-20 xl:pb-[200px] xl:pt-[130px]">
+          <div class="global-container">
+            <div class="mb-10 lg:mb-16 xl:mb-20 jobs text-center">
+              <div class="mx-auto max-w-[680px]">
+                <h2 class="text-white text-[80px]">
+                  Positive feedback from our users
+                </h2>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+              <div
+                class="flex flex-col gap-y-8 rounded-[10px] border-[1px] border-colorCodGray p-[30px] text-white jobs"
+              >
+                <div class="block">
+                  <img
+                    src="./images/rating.svg"
+                    width="146"
+                    height="25"
+                    alt=""
+                  />
+                </div>
+                <p>
+                  “This AI SaaS tool has revolutionized the way we process and
+                  analyze data. This is a game-changer for our business.”
+                </p>
+                <div class="flex items-center gap-x-4">
+                  <div class="h-[60px] w-[60px] overflow-hidden rounded-full">
+                    <img src="./images/testimonial-img-1.jpg" alt="" />
+                  </div>
+                  <div class="flex flex-col gap-y-1">
+                    <span class="block text-lg font-semibold leading-[1.6]"
+                      >Max Weber</span
+                    >
+                    <span class="block text-lg font-light leading-[1.4]"
+                      >HR Manager</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col gap-y-8 rounded-[10px] border-[1px] border-colorCodGray p-[30px] text-white jobs"
+              >
+                <div class="block">
+                  <img
+                    src="./images/rating.svg"
+                    width="146"
+                    height="25"
+                    alt=""
+                  />
+                </div>
+                <p>
+                  "It answers immediately, and we've seen a significant
+                  reduction in response time. Our customers love it and so do
+                  we!"
+                </p>
+                <div class="flex items-center gap-x-4">
+                  <div class="h-[60px] w-[60px] overflow-hidden rounded-full">
+                    <img src="./images/testimonial-img-2.jpg" alt="" />
+                  </div>
+                  <div class="flex flex-col gap-y-1">
+                    <span class="block text-lg font-semibold leading-[1.6]"
+                      >Douglas Smith</span
+                    >
+                    <span class="block text-lg font-light leading-[1.4]"
+                      >Businessman</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col gap-y-8 rounded-[10px] border-[1px] border-colorCodGray p-[30px] text-white jobs"
+              >
+                <div class="block">
+                  <img
+                    src="./images/rating.svg"
+                    width="146"
+                    height="25"
+                    alt=""
+                  />
+                </div>
+                <p>
+                  "It is accurate, fast and supports multiple languages support.
+                  It is a must for any international business success."
+                </p>
+                <div class="flex items-center gap-x-4">
+                  <div class="h-[60px] w-[60px] overflow-hidden rounded-full">
+                    <img src="./images/testimonial-img-3.jpg" alt="" />
+                  </div>
+                  <div class="flex flex-col gap-y-1">
+                    <span class="block text-lg font-semibold leading-[1.6]">
+                      Abraham Maslo</span
+                    >
+                    <span class="block text-lg font-light leading-[1.4]"
+                      >Founder @ Marketing Company</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col gap-y-8 rounded-[10px] border-[1px] border-colorCodGray p-[30px] text-white jobs"
+              >
+                <div class="block">
+                  <img
+                    src="./images/rating.svg"
+                    width="146"
+                    height="25"
+                    alt=""
+                  />
+                </div>
+                <p>
+                  "Security is a top concern for us, and AI SaaS takes it
+                  seriously. It's a reassuring layer of protection for our
+                  organization."
+                </p>
+                <div class="flex items-center gap-x-4">
+                  <div class="h-[60px] w-[60px] overflow-hidden rounded-full">
+                    <img src="./images/testimonial-img-4.jpg" alt="" />
+                  </div>
+                  <div class="flex flex-col gap-y-1">
+                    <span class="block text-lg font-semibold leading-[1.6]">
+                      Jack Fayol</span
+                    >
+                    <span class="block text-lg font-light leading-[1.4]"
+                      >HR Manager</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col gap-y-8 rounded-[10px] border-[1px] border-colorCodGray p-[30px] text-white jobs"
+              >
+                <div class="block">
+                  <img
+                    src="./images/rating.svg"
+                    width="146"
+                    height="25"
+                    alt=""
+                  />
+                </div>
+                <p>
+                  "We were concerned about integrating their APIs were well
+                  documented, and their support team was super cool."
+                </p>
+                <div class="flex items-center gap-x-4">
+                  <div class="h-[60px] w-[60px] overflow-hidden rounded-full">
+                    <img src="./images/testimonial-img-5.jpg" alt="" />
+                  </div>
+                  <div class="flex flex-col gap-y-1">
+                    <span class="block text-lg font-semibold leading-[1.6]"
+                      >Karen Lynn</span
+                    >
+                    <span class="block text-lg font-light leading-[1.4]"
+                      >Software Engineer</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col gap-y-8 rounded-[10px] border-[1px] border-colorCodGray p-[30px] text-white jobs"
+              >
+                <div class="block">
+                  <img
+                    src="./images/rating.svg"
+                    width="146"
+                    height="25"
+                    alt=""
+                  />
+                </div>
+                <p>
+                  "The return on investment has exceeded our expectations. it's
+                  an investment in the future of our business."
+                </p>
+                <div class="flex items-center gap-x-4">
+                  <div class="h-[60px] w-[60px] overflow-hidden rounded-full">
+                    <img src="./images/testimonial-img-6.jpg" alt="" />
+                  </div>
+                  <div class="flex flex-col gap-y-1">
+                    <span class="block text-lg font-semibold leading-[1.6]">
+                      Henry Ochi</span
+                    >
+                    <span class="block text-lg font-light leading-[1.4]"
+                      >Bank Manager</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div
+        class="bg-[radial-gradient(50%_50%_at_50%_50%,_#ff9831_0%,_#fe330a_100%)] filter blur-[55px] absolute -left-[15px] top-[61%] -z-[1] h-[400px] w-[400px] -rotate-[-9.022deg] animate-spin rounded-[400px]"
+      ></div>
+      <div
+        class="bg-[radial-gradient(50%_50%_at_50%_50%,_#ff9831_0%,_#fe330a_100%)] filter blur-[55px] absolute -left-[100px] top-[64%] z-[1] h-[360px] w-[360px] -rotate-[-9.022deg] animate-spin rounded-[360px]"
+      ></div>
+    </div>
+
+    <footer
+      class="relative z-[1] -mt-[70px] overflow-hidden rounded-tl-[30px] rounded-tr-[30px] lg:rounded-tr-[50px] lg:rounded-tl-[50px] bg-[#EFEAE3]"
+    >
+      <!-- footer top -->
+      <div class="py-[60px] xl:pb-[100px] xl:pt-[130px]">
+        <div class="overflow-hidden">
+          <!-- footer slider -->
+          <div
+            class="footer-text-slider flex w-full items-center gap-x-[30px] whitespace-nowrap"
+          >
+            <img
+              src="./images/footer-text-slider-icon.svg"
+              alt=""
+              width="60"
+              height="60"
+              class="h-10 w-10 lg:h-[60px] lg:w-[60px]"
+            />
+            <div
+              class="block font-dmSans text-4xl font-bold leading-none -tracking-[2px] text-black lg:text-6xl xl:text-7xl xxl:text-[80px]"
+            >
+              Start building software
+            </div>
+            <img
+              src="./images/footer-text-slider-icon.svg"
+              alt=""
+              width="60"
+              height="60"
+              class="h-10 w-10 lg:h-[60px] lg:w-[60px]"
+            />
+            <div
+              class="block font-dmSans text-4xl font-bold leading-none -tracking-[2px] text-black lg:text-6xl xl:text-7xl xxl:text-[80px]"
+            >
+              Start building software
+            </div>
+            <img
+              src="./images/footer-text-slider-icon.svg"
+              alt=""
+              width="60"
+              height="60"
+              class="h-10 w-10 lg:h-[60px] lg:w-[60px]"
+            />
+            <div
+              class="block font-dmSans text-4xl font-bold leading-none -tracking-[2px] text-black lg:text-6xl xl:text-7xl xxl:text-[80px]"
+            >
+              Start building software
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="global-container">
+        <div class="h-[1px] w-full bg-[#DBD6CF]"></div>
+        <div
+          class="lg grid grid-cols-1 gap-10 py-[60px] md:gird-cols-[1fr_auto_auto] xl:grid-cols-[1fr_auto_auto_1fr] xl:gap-20 xl:py-[100px]"
+        >
+          <div class="flex flex-col gap-y-6">
+            <a href="#" class="inline-block">
+              <img src="./images/logo.png" alt="" width="96" height="24" />
+            </a>
+            <p>
+              Our mission is to harness the power of AI to solve complex
+              business challenges & decision-makers with data-driven insights,
+              and enhance user experiences across digital platforms.
+            </p>
+            <p>
+              website:
+              <a href="https://www.example.com/">www.example.com</a>
+            </p>
+          </div>
+          <div class="flex flex-col gap-y-6">
+            <h4 class="text-[21px] font-semibold capitalize text-black">
+              Primary Pages
+            </h4>
+            <ul class="flex flex-col gap-y-[10px] capitalize">
+              <li>
+                <a
+                  href="#"
+                  class="transition-all duration-300 ease-linear hover:text-[#FE330A]"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="transition-all duration-300 ease-linear hover:text-[#FE330A]"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="transition-all duration-300 ease-linear hover:text-[#FE330A]"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="transition-all duration-300 ease-linear hover:text-[#FE330A]"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="transition-all duration-300 ease-linear hover:text-[#FE330A]"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-y-6">
+            <h4 class="text-[21px] font-semibold capitalize text-black">
+              Utility Pages
+            </h4>
+            <ul class="flex flex-col gap-y-[10px] capitalize">
+              <li>
+                <a
+                  href="#"
+                  class="transition-all duration-300 ease-linear hover:text-[#FE330A]"
+                  >Signup</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="transition-all duration-300 ease-linear hover:text-[#FE330A]"
+                  >Login</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="transition-all duration-300 ease-linear hover:text-[#FE330A]"
+                  >404 Not Found</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="transition-all duration-300 ease-linear hover:text-[#FE330A]"
+                  >Password Reset</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-y-6">
+            <h4 class="text-[21px] font-semibold capitalize text-black">
+              Subscribe to our newsletter
+            </h4>
+            <form action="#" method="post" class>
+              <div class="relative h-[50px] max-w-[300px]">
+                <input
+                  type="email"
+                  name="newsletter-email"
+                  id="newsletter-email"
+                  placeholder="Enter your email"
+                  class="p-y-[18px] h-full w-full rounded-[50px] border-[1px] border-black px-[24px] pr-20 outline-none"
+                />
+                <button
+                  type="submit"
+                  class="absolute right-[5px] top-[50%] inline-block h-10 -translate-y-[50%] rounded-[50px] bg-black px-6 transition-all hover:bg-orange-500"
+                >
+                  <img src="./images/arrow-right-large.svg" alt="" />
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="h-[1px] w-full bg-[#DBD6CF]"></div>
+        <div class="py-6 text-center">
+          <p>© Copyright 2023, All Rights Reserved by Mthemeus</p>
+        </div>
+      </div>
+      <div
+        class="bg-[radial-gradient(50%_50%_at_50%_50%,_#fe330a_0%,_#ff9831_100%)] blur-[55px] absolute -top-[290px] right-[90px] -z-[1] h-[406px] w-[406px] -rotate-[58deg] rounded-[406px]"
+      ></div>
+      <div
+        class="bg-[radial-gradient(50%_50%_at_50%_50%,_#ff9831_0%,_#fe330a_100%)] blur-[55px] absolute -top-[205px] -right-[200px] -z-[1] h-[451px] w-[451px] -rotate-[58deg] rounded-[451px"
+      ></div>
+    </footer>
+
+    <!-- JS -->
+    <script src="./js/jquery-1.11.0.min.js"></script>
+    <!-- Slick JS -->
+    <script src="./lib/slick/slick.min.js"></script>
+
+    <!-- countup -->
+    <script src="./lib/countup/jquery.countup.min.js"></script>
+
+    <!-- Waypoints -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+    <script>
+      $(".slick-slider").slick({
+        // Chạy vòng tròn
+        infinite: true,
+        // Số lượng item hiển thị
+        slidesToShow: 5,
+
+        // Số lượng item thay đổi khi scroll
+        slidesToScroll: 1,
+
+        // Ẩn hiện mũi tên next or prev item
+        arrows: false,
+
+        // Tự động chuyển slider
+        autoplay: true,
+
+        // Thời gian chuyển slider item (đơn vị ms, 1s = 1000ms)
+        autoplaySpeed: 2000,
+
+        dots: false,
+
+        adaptiveHeight: true,
+      });
+    </script>
+
+    <script>
+      $(".counter").countUp({
+        time: 2000,
+        delay: 10,
+      });
+    </script>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
