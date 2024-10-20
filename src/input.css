@@ -68,6 +68,11 @@ h2{
     color:rgb(0 0 0 / var(--tx-text-opacity));
 }
 
+h2{
+  font-size:2.25rem;
+  line-height: 2.5rem;
+}
+
 .font-dmSans{
     font-family: DM Sans, sans-serif;
 }
