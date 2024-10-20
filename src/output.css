@@ -1973,23 +1973,6 @@ h2{
   opacity: 1;
 }
 
-@media (min-width: 640px) {
-  .sm\:invisible {
-    visibility: hidden;
-  }
-
-  .sm\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .md\:invisible {
-    visibility: hidden;
-  }
-}
-
 @media (min-width: 0px) and (max-width: 1024px) {
   .lg\:invisible {
     visibility: hidden;
@@ -1999,5 +1982,9 @@ h2{
 @media (min-width: 1024px) and (max-width: 1536px) {
   .xl\:visible {
     visibility: visible;
+  }
+
+  .xl\:invisible {
+    visibility: hidden;
   }
 }
